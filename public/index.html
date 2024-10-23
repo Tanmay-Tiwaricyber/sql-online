@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Online Compiler</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SQL Online Compiler</h1>
+        <div class="theme-switcher">
+            <label for="themeToggle">Toggle Dark/Light Theme</label>
+            <input type="checkbox" id="themeToggle">
+        </div>
+        <textarea id="sqlQuery" placeholder="Enter your SQL query here..."></textarea>
+        <div class="button-container">
+            <button id="runQuery">Run Query</button>
+            <button id="clearOutput">Clear Output</button>
+        </div>
+        <h2>Output</h2>
+        <pre id="output" class="output"></pre>
+        <h2>Query History</h2>
+        <ul id="queryHistory" class="history"></ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
